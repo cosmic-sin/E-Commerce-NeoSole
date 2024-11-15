@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>NeoSole</title>
+    <link href="products.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<header class="d-flex align-items-center justify-content-between p-3 bg-danger">
+    <div>
+        <a href="javascript:void(0)" class="text-dark ms-4" onclick="openPanel()">
+            <i class="fas fa-ellipsis-v"></i> 
+        </a>
+    </div>
+    <div class="flex-grow-1 text-center">
+        <label>NeoSole</label> 
+    </div>
+    <div class="dropdown">
+        <a href="#" class="text-dark me-4" id="account-icon" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-user" aria-label="Account Menu"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" id="dropdown-menu" aria-labelledby="account-icon">
+            <li><a class="dropdown-item" href="#login" id="dropdown-item">Login</a></li>
+            <li><a class="dropdown-item" href="#signup" id="dropdown-item">Sign Up</a></li>
+        </ul>
+    </div>
+        
+    
+        <a href="#" class="text-dark me-4">
+            <i class="fas fa-shopping-cart"></i> 
+        </a>
+        
+        <a href="#" class="text-dark me-4">
+            <i class="fa-solid fa-heart"></i>
+        </a>
+    </div>
+</header>
+<body>
+    <div id="mySidePanel" class="side-panel">
+        <a href="javascript:void(0)" class="close-btn" onclick="closePanel()">×</a>
+        <a href="#Account">Account</a>
+        <a href="#Orders">Orders</a>
+        <a href="#Career">Career</a>
+        <a href="#Settings">Settings</a>
+        <a href="#Wishlist">Wishlist</a>
+        <a href="#FAQ">FAQ</a>
+    </div>
+    <div class="container product-container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://png.pngtree.com/thumb_back/fh260/background/20230712/pngtree-vibrant-red-canvas-sports-shoes-with-elevated-soles-unisex-design-in-image_3846974.jpg" class="img-fluid product-image" alt="Responsive Image">
+                <div class="card-body">
+                    <h5 class="card-title">NS-Retro</h5>
+                    <p class="card-text">$15.3</p>
+                    <p class="card-text text-muted">Retro collection to makeup your day,
+                        extra comfier with base supported sole and ankle protection</p>
+                    <div class="btn-group-horizontal d-flex gap-3">
+                        <button class="btn btn-primary " id="Ns-retro">View Product</button>
+                        <button class="btn btn-success">Add To Wishlist</button>
+                    </div>
+                    
+                </div>
+                </div>
+
+        </div>
+        <div class="col-md-4 product-2">
+            <div class="card shadow-sm">
+                <img src="https://img.freepik.com/premium-photo/stepping-into-sophistication-charm-blue-simple-background-shoes_983420-23083.jpg" class="img-fluid product-image" alt="Responsive Image">
+            <div class="card-body">
+                <h5 class="card-title">NS-Bluewave</h5>
+                <p class="card-text">$13.3</p>
+                <p class="card-text text-muted">A combination of sea blue and white to endrose with you outfit, 
+                    makes walking with style simpler</p>
+                <div class="btn-group-horizontal d-flex gap-3">
+                    <button class="btn btn-primary" id="NS-Bluewave">View Product</button>
+                    <button class="btn btn-success">Add To Wishlist</button>
+                </div>
+            </div>
+            </div>
+
+    </div>
+    <div class="col-md-4 product-2">
+        <div class="card shadow-sm">
+            <img src="https://img.freepik.com/premium-photo/green-shoe-with-green-background_635062-308.jpg" class="img-fluid product-image" alt="Responsive Image">
+        <div class="card-body">
+            <h5 class="card-title">NS-GreenBlock</h5>
+            <p class="card-text">$18.3</p>
+            <p class="card-text text-muted">Enhanced Neo collection with exceptional style and comfort, perfect for party.</p>
+            <div class="btn-group-horizontal d-flex gap-3">
+                <button class="btn btn-primary " id="NS-GreenBlock">View Product</button>
+                <button class="btn btn-success">Add To Wishlist</button>
+            </div>
+        </div>
+        </div>
+
+</div>
+<div class="col-md-4 product-2">
+    <div class="card shadow-sm">
+        <img src="https://assets.ajio.com/medias/sys_master/root/20240704/3hV2/66872b896f60443f3171104a/-473Wx593H-469053134-yellow-MODEL.jpg" class="img-fluid product-image" alt="Responsive Image">
+    <div class="card-body">
+        <h5 class="card-title">NS-Sunrise</h5>
+        <p class="card-text">$12.3</p>
+        <p class="card-text text-muted">Simpler yet classic collection , which can complement you outfit</p>
+        <div class="btn-group-horizontal d-flex gap-3">
+            <button class="btn btn-primary " id="NS-Sunrise">View Product</button>
+            <button class="btn btn-success">Add To Wishlist</button>
+        </div>
+    </div>
+    </div>
+
+</div>
+<div class="col-md-4 product-2">
+    <div class="card shadow-sm">
+        <img src="https://img.tatacliq.com/images/i17//437Wx649H/MP000000021828557_437Wx649H_202404052312221.jpeg" class="img-fluid product-image" alt="Responsive Image">
+    <div class="card-body">
+        <h5 class="card-title">NS-Booster</h5>
+        <p class="card-text">$14.3</p>
+        <p class="card-text text-muted">Designed to ensure both comfort and stability with PU upper that ensures to keep your feet relaxed.</p>
+        <div class="btn-group-horizontal d-flex gap-3">
+            <button class="btn btn-primary ">View Product</button>
+            <button class="btn btn-success">Add To Wishlist</button>
+        </div>
+    </div>
+    </div>
+
+</div>
+<div class="col-md-4 product-2">
+    <div class="card shadow-sm">
+        <img src="https://img.tatacliq.com/images/i18//437Wx649H/MP000000022847658_437Wx649H_202407091324031.jpeg" class="img-fluid product-image" alt="Responsive Image">
+    <div class="card-body">
+        <h5 class="card-title">NS-Sportx</h5>
+        <p class="card-text">$14.3</p>
+        <p class="card-text text-muted">Pair of multicolor basketball have best sports experience. </p>
+        <div class="btn-group-horizontal d-flex gap-3">
+            <button class="btn btn-primary ">View Product</button>
+            <button class="btn btn-success">Add To Wishlist</button>
+        </div>
+    </div>
+    </div>
+
+</div>
+        </div>
+    </div>
+    <footer class="bg-danger text-black text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1">© 2023 NeoSole. All rights reserved.</p>
+            <p class="mb-0">
+                <a href="#" class="text-black mx-2">Privacy Policy</a> |
+                <a href="#" class="text-black mx-2">Terms of Service</a> |
+                <a href="#" class="text-black mx-2">Contact Us</a>
+            </p>
+        </div>
+    </footer>
+    <script src="products.js">
+
+    </script>
+    <!-- <script>
+        $(document).ready(function(){
+        $('#account-icon').click(function(e){
+            e.preventDefault();
+            $('#dropdown-content').toggle();
+        });
+        
+        // Close dropdown if clicked outside
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('.account-menu').length) {
+                $('#dropdown-content').hide();
+            }
+        });
+    });
+    </script> -->
+</body>
+</html>

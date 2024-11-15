@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+main{
+    display: flex;
+}
+
+header label{
+    margin-top: 35px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:xx-large;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #000000;
+}
+
+
+.product-display {
+    width: 50%;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.Ns-Retro{
+    border-radius: 25px;
+    height: 500px;
+    margin-left: 15px;
+}
+
+.Ns-Retro:hover{
+    transform: scale(1.1);
+}
+/* .product-thumbnails img {
+    width: 70px;
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+} */
+
+.product-details {
+    width: 45%;
+    color: #fff;
+    margin-top: 50px;
+    margin-right: 100px;
+    
+}
+
+.size-selection button {
+    margin: 5px;
+    margin-bottom: 14px;
+    padding: 12px;
+    background-color: #892121;
+    border: 1px solid #892121;
+    border-radius: 10px;
+}
+
+.side-panel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#000000;
+    color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.side-panel a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.side-panel a:hover {
+    background-color: #992323;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
